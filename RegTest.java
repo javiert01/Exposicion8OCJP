@@ -16,12 +16,10 @@ public class RegTest {
 		 Matcher m = p.matcher(str); // string donde se va a buscar
 		 System.out.println("\nstring: " + str);
 		 System.out.println("expresión: " + m.pattern()); // la expresión
-		 System.out.print("posiciones encontradas: "); // posiciones encontradas
+		 System.out.print("posiciones encontradas:\n"); // posiciones encontradas
 		 while(m.find()) {
-		 System.out.print(m.start() + " ");
+			 System.out.println(m.start() + " " + m.group());
 		 }
 		 System.out.println("");
 		 }
 }
-
-
